@@ -1,0 +1,894 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+:root {
+    --bg--color : #2a2a2a;
+    --second-bg-color : #202020;
+    --text-color : #fff;
+    --second-color : #ccc;
+    --main-color : #e20674;
+    --big-font : 5rem;
+    --h2-font : 3rem;
+    --p-font : 1.1rem;
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+body{
+    background: var(--bg--color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo {
+    color:var(--text-color) ;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease ;
+
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a.active{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+section{
+    padding: 160px 15% 120px;
+}
+
+/*<!--Home section design-->*/
+
+.home {
+    position: relative;
+    width: 100%;
+    background-image: url(./imagens/teste3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    
+}
+.home-text .text-h1{
+    font-size: var(--h2-font);
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+.home-text p{
+    margin-bottom: 4rem;
+}
+  
+
+.home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #ffbf00, #ff1493) ;
+    border-radius: 20Px;
+    
+    color: var(--text-color);
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45 ease;
+    box-shadow: 0 0 5px #daa520, 0 0 25px #daa520;
+    font-size: 30px;
+}
+.home-btn:hover {
+    transform: scale(0.9);
+    transition: 0.8s;
+    box-shadow: 0 0 5px #daa520, 0 0 25px #daa520, 0 0 50px #daa520, 0 0 100px #daa520,0 0 200px #daa520;
+}
+
+.home-img  {
+    width: 100%;  
+}
+
+.home-img  img{
+   
+    border-radius: 20px;
+  
+    
+}
+
+
+
+
+
+/*<!--Video section design-->*/
+
+.sectionvideo {
+    background-image: url(./imagens/fundo\ estrelado.png);
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.video {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 56.25%;
+
+}
+
+.iframe iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+.but{
+    
+    text-align: center;
+}
+
+.butbut {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(45deg, #ffbf00, #ff1493) ;
+    border-radius: 20Px;
+    color: var(--text-color);
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .45 ease;
+    box-shadow: 0 0 5px #daa520, 0 0 25px #daa520;
+    font-size: 20px;
+}
+
+.butbut:hover {
+    transform: scale(0.9);
+    transition: 0.8s;
+    box-shadow: 0 0 5px #daa520, 0 0 25px #daa520, 0 0 50px #daa520, 0 0 100px #daa520,0 0 200px #daa520;
+}
+
+/*<!--Depoimentos section design-->*/
+
+.depoimentos {
+    background-image: url(/imagens/fundo\ estrelado.png);
+
+}
+
+.depoimentos h1 {
+    text-align: center;
+    margin: 0 0 5rem 0;
+    font-size: var(--h2-font);
+}
+
+
+
+
+.cards1dep {
+    margin: auto;
+    max-width: 1000px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr)); 
+    grid-gap: 25px;
+    padding: 20px 0px;
+
+}
+
+
+
+.carddep {
+    width: 330px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px #ffffff36;
+    
+
+}
+
+.carddep .userdep{
+    width: 100px;
+    border-radius: 8px;
+    height: 100px;
+    margin-bottom: 15px;
+
+}
+
+.carddep h3 {
+    margin-bottom: 5px;
+}
+
+.carddep p {
+    font-size: var(--p-font);
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+
+.stardep {
+    width: 20px;
+}
+
+
+/*<!--FALANDO section design-->*/
+
+.falandocurso {
+    background-image: url(/imagens/fundo\ estrelado.png);
+}
+
+.falandocurso h1 {
+    text-align: center;
+    margin: 0 0 5rem 0;
+    font-size: var(--h2-font);
+}
+
+.falancontainer {
+    margin: auto;
+    max-width: 1000px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr)); 
+    grid-gap:  25px;
+    padding: 20px 0px;
+}
+
+.falanrow img{
+
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: contain;
+
+
+}
+
+
+/*<!--Certificadooo section design-->*/
+
+.certificadosec {
+    background-image: url(/imagens/fundo\ estrelado.png);
+}
+
+.certificadosec .main-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.certcontainer {
+    margin: auto;
+    max-width: 700px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr)); 
+    grid-gap:  25px;
+    padding: 20px 0px;
+}
+
+
+
+
+.certnrow img{
+
+    width: 100%;
+    
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: contain;
+}
+
+
+
+
+
+
+/*<!--About section design-->*/
+
+
+.about {
+    background-image: url(./imagens/fundo\ estrelado.png);
+}
+
+header.sticky {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--main-color);
+    padding: 12px 15%;
+    
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+
+
+}
+
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4rem;    
+}
+
+.about-text a {
+    justify-content: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .45 ease;
+}
+.about-text a:hover {
+    transform: scale(0.8);
+    transition: 0.8s;
+}
+/*<!--Curso section design-->*/
+
+.services {
+    background-image: url(/imagens/fundo\ estrelado.png);
+}
+.main-text {
+    text-align: center;
+
+}
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+.box {
+    background: var(--bg--color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45 ease;
+}
+.s-icons i{
+    font-size: 32px ;
+    margin-bottom: 20px;
+}
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+.box p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+} 
+.read {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #333333;
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+.read:hover{
+    letter-spacing: 1px;
+    background: #ffffff99;
+    color: var(--text-color);
+}
+.box:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+
+}
+
+.duvidaa {
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.duvidaa h4 {
+    font-size: 30px;
+    color: var(--text-color);
+    padding-bottom: 20px;
+    
+}
+
+.duvidaa P{
+    font-size: var(--p-font);
+    padding-bottom: 45PX;
+}
+
+
+
+.btn-duvida {
+    display: inline-block;
+    background-color: #1dc507;
+    padding: 20px 60px;
+    border-radius: 10px;
+    color: var(--text-color);
+    font-weight: 500;
+    box-shadow: 10 10 5px #031601;
+}
+
+/*<!--Porfifolio section design-->*/
+
+.portfolio {
+    background-image: url(/imagens/fundo\ estrelado.png);
+    padding: 20px;
+}
+
+.portfolio-content {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(320px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    
+    
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.row img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: contain;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.1) , #ff004f);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+
+}
+
+.layer h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.layer i {
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.row:hover img{
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+/*<!--ABAS section design-->*/
+
+.abas {
+    background-image: url(/imagens/fundo\ estrelado.png);
+    width: 100%;
+    align-items: center;
+}
+
+
+.text-abas h2 {
+    
+    padding: 50px;
+    font-size: 35px;
+    line-height: 1;
+    text-align: center;
+
+}
+
+.abastudo {
+    grid-template-columns: repeat( auto-fit, minmax(300px, auto));
+    display: grid;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    grid-gap: 1rem;
+    
+}
+.abascontainer {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  .abas-animated-border {
+    width: 400px;
+    height: 190px;
+    background: #d404b9;
+    position: absolute;
+    animation: rotate 3s infinite ease-in-out;
+    
+  }
+  .abas-corner {
+    width: 325px;
+    height: 325px;
+    background: #000;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .abas-content {
+    width: 320px;
+    height: 320px;
+    background: #000;
+    z-index: 2;
+    display: coluns;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #de0d9c;
+    text-align: center;
+  }
+
+  .abas-content h1{
+    padding: 5px;
+  }
+
+
+  .abas-content h3{
+    padding: 5px;
+  }
+
+  .abas-content p {
+    padding-top: 10px;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/*<!--Eu section design-->*/
+
+.eu {
+    background-image: url(/imagens/fundo\ estrelado.png);
+}
+
+.h2eu {
+    text-align: center;
+    padding: 20px;
+    font-size: var(--h2-font);
+}
+
+.eucontainer {
+
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+}
+
+.eurow img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: contain;
+    
+}
+
+/*<!--FAQ section design-->*/
+
+.faqq {
+    background-image: url(/imagens/fundo\ estrelado.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqq h2 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: var(--h2-font);
+}
+
+.faqcontainer {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+
+.accordion-item {
+    background-color: #c4116a;
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,0.1);
+}
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    background-image: url(/imagens/fundo\ estrelado.png);
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 0; 
+}
+
+.accordion-link i {
+    padding: .5rem;
+
+}
+
+.accordion-link .bx-comment-minus {
+    display: none;   
+}
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url(/imagens/fundo\ estrelado.png);
+    transition: max-height 650ms;
+}
+
+.answer ::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #ccc;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p {
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 2rem;
+    
+
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+.accordion-item:target .accordion-link .bx-comment-add {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .bx-comment-minus {
+    display: block;
+}
+
+/*<!--endsection design-->*/
+
+.end {
+    background-image: url(/imagens/fundo\ estrelado.png);
+}
+.last-text1 {
+    padding-bottom: 30px;
+font-size: 11px;
+}
+
+.login {
+ text-align: center;
+}
+
+.end img {
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+    width: 80px;
+    max-width: 80px;
+    }
+
+/*<!--endsection design-->*/
+
+@media (max-width:1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;;
+    }
+
+    section {
+        padding: 110px 3% 60px ;
+    }
+    .end {
+        padding: 15px 3%;
+    }
+}
+
+@media (max-width:1100px){
+    :root {
+        --big-font:3.5rem;
+        --h2-font: 2.5rem;
+        --p-font:1rem;
+        transition: .1s;   
+    }
+}
+
+@media (max-width:920px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        text-align: center;
+        order: 2;
+    }
+    .about-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .depoimentos{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width:840px){
+    #menu-icon {
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        transition: all .45s ease;
+        background-image: url(/imagens/fundo\ estrelado.png);
+    }
+    .navlist a {
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color)
+    }
+    .navlist a:hover{
+        color: var(--main-color);  
+    }
+    .navlist a.active {
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+
+}
+
